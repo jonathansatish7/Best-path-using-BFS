@@ -1,7 +1,4 @@
-# Name: Jonathan Satish Tirupuranthakam
-# Username: josatiru 
-
-# Navigation
+## Navigation
 
 1. So in the start I have gone through the code route_pichu and I have placed several print statements "print(curr_move,curr_dist,dir)" and "print(moves)" in order to know what are getting inserted into the fringe and popped out of fringe.
 2. Then realized that the all the elements are not going into the fringe and then as the search function is using stack (appending to the end and popping from end). So it was implementing the DFS which is incomplete and it's not verifying all the possibilities and then I modified the stack to queue by popping from the last and then inserting in the beginning of the list by using "fringe.insert(0,(move[0:2], curr_dist + 1,move[2]))".
